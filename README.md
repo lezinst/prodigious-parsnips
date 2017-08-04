@@ -16,7 +16,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 # Table of Contents
 
-1. [Documentation](#scout api documentation)
+1. [Scout Api Documentation](#scout api documentation)
 1. [Requirements](#requirements)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
