@@ -4,10 +4,10 @@ The backend for a React Native application called Scout. Scout is an application
 
 ## Team
 
-Derek Johnson
-Nick Akey
-Ben Bucca
-Rob St. Lezin
+Derek Johnson,
+Nick Akey, 
+Ben Bucca,
+Rob St. Lezin,
 
 
 ## Contributing
@@ -16,12 +16,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 # Table of Contents
 
-1. [Documentation](#scout api documentation)
 1. [Requirements](#requirements)
 1. [Documentation](#Documentation)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
     1. [Tasks](#tasks)
+
+
+## Requirements
+
+- Node 6.9.x
+- Redis 3.2.x
+- Postgresql 9.6.x
+- Xcode
 
 ## Documentation
 
@@ -54,12 +61,7 @@ Accepts **userId**, **title**, **text**, **geotag**, **subId**
 In order to add a comment: send a **postId** as a query paramater.
 Accepts **userId**, **title**, **text**, **geotag**, **postId**
 
-## Requirements
 
-- Node 6.9.x
-- Redis 3.2.x
-- Postgresql 9.6.x
-- Xcode
 
 ### Installing System Dependencies
 
