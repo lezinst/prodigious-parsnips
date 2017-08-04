@@ -22,10 +22,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
     1. [Installing Dependencies](#installing-dependencies)
     1. [Tasks](#tasks)
 
-## Usage
-
-> Some usage instructions
-
 ## Requirements
 
 - Node 6.9.x
@@ -33,7 +29,37 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 - Postgresql 9.6.x
 - Xcode
 
-## Development
+## Scout API Documentation
+
+/user
+Returns the user data associated with user id passed in as query parameters.
+
+/map
+Returns a new Scout and defines admin preferences which become the default preferences for any subscribers.
+It accepts **upvoteThreshold**, **distanceThreshold**, **mapTitle**, **mapDescription**, **userId** on the request body.
+
+/settings
+*GET* - Returns user preferences for user id.
+It accepts an **id** as a query parameter
+
+*POST* - Updates user preferences. 
+It accepts a **adminTitle**, **adminDescription**, **userPreferenceId**, **upvoteThreshold**, **locationThreshold**, **notificationLimit**
+on the request body.
+
+/messages
+*GET* - Returns messages by post id.
+NOTE:
+In order to get posts: send a **subredditId** as a query parameter
+In order to get comments: send a **postId** as a query paramater
+If neither is given then local messages will be given.
+
+*POST* - Add messages.
+In order to add a post: send a **subId** as a query parameter.
+Accepts **userId**, **title**, **text**, **geotag**, **subId**
+
+In order to add a comment: send a **postId** as a query paramater.
+Accepts **userId**, **title**, **text**, **geotag**, **postId**
+
 
 ### Installing System Dependencies
 
@@ -103,36 +129,6 @@ To run tests: `yarn run test`
 
 To run your redis server for the session store `redis-server`
 
-## Scout API Documentation
-
-/user
-Returns the user data associated with user id passed in as query parameters.
-
-/map
-Returns a new Scout and defines admin preferences which become the default preferences for any subscribers.
-It accepts **upvoteThreshold**, **distanceThreshold**, **mapTitle**, **mapDescription**, **userId** on the request body.
-
-/settings
-*GET* - Returns user preferences for user id.
-It accepts an **id** as a query parameter
-
-*POST* - Updates user preferences. 
-It accepts a **adminTitle**, **adminDescription**, **userPreferenceId**, **upvoteThreshold**, **locationThreshold**, **notificationLimit**
-on the request body.
-
-/messages
-*GET* - Returns messages by post id.
-NOTE:
-In order to get posts: send a **subredditId** as a query parameter
-In order to get comments: send a **postId** as a query paramater
-If neither is given then local messages will be given.
-
-*POST* - Add messages.
-In order to add a post: send a **subId** as a query parameter.
-Accepts **userId**, **title**, **text**, **geotag**, **subId**
-
-In order to add a comment: send a **postId** as a query paramater.
-Accepts **userId**, **title**, **text**, **geotag**, **postId**
 
 
 
