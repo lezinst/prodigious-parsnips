@@ -1,15 +1,14 @@
-# Project Name
+# Scout API Server
 
-The project description
+The backend for a React Native application called Scout. Scout is an application which allows users to get notified of events relevant to their interests based on geolocation. Users can follow those interests by subscribing and participating in Hubs. If there is a Hub update and a user is within range they will be notified of the event! 
 
 ## Team
 
 Derek Johnson
-Nick Fla
+Nick Akey
+Ben Bucca
+Rob St. Lezin
 
-## Roadmap
-
-View the project roadmap [here](LINK_TO_DOC)
 
 ## Contributing
 
@@ -47,10 +46,10 @@ To run the react native simulator:
 react-native run-ios
 ```
 
+
 Yarn is a replacement for npm. It's faster and *guarantees* consistency -- as you deploy your code in various environments, you won't run the risk of slight variations in what gets installed.
 
 ### Install Project Dependencies
-
 ```
 yarn global add grunt-cli knex eslint
 ```
