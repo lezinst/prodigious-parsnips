@@ -16,13 +16,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 # Table of Contents
 
-1. [Scout Api Documentation](#scout api documentation)
+1. [Documentation](#scout api documentation)
 1. [Requirements](#requirements)
+1. [Documentation](#Documentation)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
     1. [Tasks](#tasks)
 
-## Scout API Documentation
+## Documentation
 
 /user
 Returns the user data associated with user id passed in as query parameters.
