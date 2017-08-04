@@ -4,10 +4,8 @@ The project description
 
 ## Team
 
-- teamMember
-- teamMember
-- teamMember
-- teamMember
+Derek Johnson
+Nick Fla
 
 ## Roadmap
 
@@ -34,7 +32,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 - Node 6.9.x
 - Redis 3.2.x
 - Postgresql 9.6.x
-- etc
+- Xcode
 
 ## Development
 
@@ -44,6 +42,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 brew install yarn
 brew install redis
 brew install postgresql
+
+To run the react native simulator:
+react-native run-ios
 ```
 
 Yarn is a replacement for npm. It's faster and *guarantees* consistency -- as you deploy your code in various environments, you won't run the risk of slight variations in what gets installed.
